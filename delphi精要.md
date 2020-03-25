@@ -20,7 +20,7 @@
 
 # 5 VCL精要
 
-![VCL架构](C:\Users\Administrator\Desktop\学习笔记\VCL架构.png)
+![VCL架构](\VCL架构.png)
 
 * TObject（单元：System，主要定义了四类功能的虚方法）
 
@@ -159,7 +159,7 @@
 
 * VMT是***虚拟方法表***，虚拟方法表被分成了一个个的大小为4个字节的指针。
 
-* ![VMT结构图](C:\Users\Administrator\Desktop\学习笔记\VMT结构图.png)
+* ![VMT结构图](\VMT结构图.png)
 
 * 从上图可以看出，一个对象实际上是一个指针，该指针指向对象的实际数据区，也被称为对象数据区。那么对象的字段，方法，属性和事件这些对象数据在“对象数据区”中怎么组织的呢？
 
@@ -202,11 +202,11 @@
 
 * 虚拟方法表的分布图
 
-  ![虚拟方法表](C:\Users\Administrator\Desktop\学习笔记\虚拟方法表.png)
+  ![虚拟方法表](\虚拟方法表.png)
 
-  ![image-20191125120841247](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20191125120841247.png)
+  ![](\虚拟方法表1.png)
 
-  ![image-20191125120903509](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20191125120903509.png)
+  ![](\虚拟方法表2.png)
 
 ## 5.2 VCL消息机制
 

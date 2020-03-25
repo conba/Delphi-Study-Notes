@@ -1,6 +1,6 @@
 # 深入浅出VCL
 
-![](C:\Users\Administrator\Desktop\学习笔记\VCL主要架构.png)
+![](\VCL主要架构.png)
 1. TObject （定义他的单元是System）
 
    主要定义了四类功能的虚方法：
@@ -78,7 +78,7 @@
 
    这些非组件类主要由两个好处，一是非组件类可以定义组件属性的数据类型，如图像组件（TGraphic对象）的Picture属性或列表框（TString对象）的Items属性。这些类一般继承自TPersistent，所以时流式的，可以由子属性甚至事件；二是可以直接使用。在用户编写的delphi代码中，可以分配和处理这些类的对象。
 
-   ![](C:\Users\Administrator\Desktop\学习笔记\delphi主要基类及其派生类的关系.png)
+   ![](.\delphi主要基类及其派生类的关系.png)
 
 ### 可视化控件和非可视化空间的区别
 
