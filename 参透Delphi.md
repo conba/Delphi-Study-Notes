@@ -62,7 +62,7 @@ sVar := IntToHex(Integer(Ptr), 8); // sVar的值是005221E8
   end;
   ```
 
-  ![二维数组](C:\Users\Administrator\Desktop\学习笔记\二维数组.png)
+  ![二维数组](二维数组.png)
 
 * 因为内存是线性的，所以矩阵在内存中也是线性存储的。将二维数据转换成一维线性表存储是，Delphi总是一行一行来存储。如果M的首地址为p，元素个数为m * n，每个元素占用4个字节，那么元素M[i, j]的地址为
 
@@ -72,11 +72,11 @@ sVar := IntToHex(Integer(Ptr), 8); // sVar的值是005221E8
 
   
 
-  ![二维数组内存结构](C:\Users\Administrator\Desktop\学习笔记\二维数组内存结构.png)
+  ![二维数组内存结构](二维数组内存结构.png)
 
 * 类似的，将三维数据转化成一维线性表是，delphi规定，总是先存储数组最后一维数据，然后才依次存储第二维，第一维的数据。
 
-  ![三维数组内存结构](C:\Users\Administrator\Desktop\学习笔记\三维数组内存结构.png)
+  ![三维数组内存结构](三维数组内存结构.png)
 
 * 多维数组的结构：
 

@@ -8,21 +8,21 @@
 
 * 打开该工程的Option，修改该工程的 **Output directory** , **Search path** ，其中  **Search path** 的配置如图所示
 
-![](\新建dll1.png)
+![](新建dll1.png)
 
 图片中的5条记录是必须添加的记录。
 
 ## Version Info
 
-* 新建的Dll必须勾选 **Include version information in project**。不选中就那么编译出的Dll没有版本信息![](\新建dll2.png)
+* 新建的Dll必须勾选 **Include version information in project**。不选中就那么编译出的Dll没有版本信息![](新建dll2.png)
 
 ## Packages
 
-* 新的Dll接口只和PMDzpb这个包有关。![](\新建dll3.png)
+* 新的Dll接口只和PMDzpb这个包有关。![](新建dll3.png)
 
 ## Debugger
 
-* Host application 要关联相应的应用程序![](\新建dll4.png)
+* Host application 要关联相应的应用程序![](新建dll4.png)
 
 ## 新建GUID
 
