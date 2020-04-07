@@ -187,5 +187,47 @@ end;
   IntToHex(Integer(P1), 8); // 返回0018F536
   ```
 
-  对于PChar类型，指针加1，所指向地址下移一个字节（8位）；对于PWideChar类型，指针加1，下移两个字节。
+  对于PChar类型，指针加1，所指向地址下移一个字节（8位）在Delphixe中是两个字节；对于PWideChar类型，指针加1，下移两个字节。
+
+## PChar与长字符串
+
+1. 长字符串也是基于0下标的，只是下标0并不对应与字符串中的第一个字母，而是字符串的长度。事实上，按照Delphi的实现，一个长字符串变量一旦被赋值或者使用Setlength过程确定了长度，则该长字符串就是以null结尾的。因而在Delphi中长字符串可以兼容PChar，但反之不成立。
+
+2. 在string类型与PChar类型混用时，要注意以下几点
+
+   ```pascal
+   // 1. 可以直接把PChar类型赋值给string类型的变量
+   var
+     S1: string;
+     P1: PChar;
+   begin
+     P1 := 'June';
+     S1 := P1;
+   end;
+   
+   // 2. 不能将string类型的变量赋给PChar类型的变量，此时必须进行强制类型转换。例如，查找子串位置的函数AnsiPos
+   function AnsiPos(const SubStr, S: string): integer;
+   var
+     P: PChar;
+   begin
+     Result := 0;
+     P := AnsiStrPos(PChar(s), PChar(SubStr));
+     if P <> nil then
+       Result := Integer(P) - Integer(PChar(s)) + 1;
+   end;
+   
+   // 3. PChar类型和string类型可以在双目运算表达式中混合使用。在运算时会将PChar类型自动转化成string类型。
+   // 4. 如果程序的参数或者对象方法以string为参数，那么可以传入实参PChar类型。
+   ```
+
+3. 将string类型转化成PChar类型时，要注意以下问题。
+
+   ```pascal
+   // 1. 如果S为string类型的表达式，PChar(S)将S转化成以null结尾的字符串，PChar(S)为指向S中的第一个字符串。
+   // 2. 
+   ```
+
+   
+
+
 
