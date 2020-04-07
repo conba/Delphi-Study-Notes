@@ -552,7 +552,19 @@ end;
    
    ```
    
+   ## Delphi中 New,Getmem,ReallocMem联系与区别
    
+   ```pascal
+    procedure New(var P: Pointer);  {为一个指针变量分配内存，会自动计算指针所指数据结构需要空的空间大小}
+    procedure GetMem(var P: Pointer; Size: Integer); {分配一个指定大小的内存块（连续），并用P指向它}
+    procedure ReallocMem(var P: Pointer; Size: Integer); {重新分配指定大小内存块，参数P必须是nil或者指向一个由GetMem, AllocMem, 或 ReallocMem分配的内存变量，其分配的内存是连续的，会把前面已有的数据移到新分配的内存中去}
+   //通常采用New分配内存比较好。
+   一、New和GetMem都可以为指针类型动态分配内存，并且Delphi不会对由此分配的内存进行管理，即必须有相应的代码对其进行释放，否则内存将“丢失”，直到应用程序结束。  
+   二、New分配的内存必须由Dispose来释放；GetMem分配的内存必须由FreeMem来释放；  
+   三、New根据指针类型来自动计算需要分配的内存尺寸；GetMem必须指定尺寸；
+   因此，对于类型指针，一般用New和Dispose来进行管理；对于内存尺寸随机的指针（典型地如PChar），一般用GetMem和FreeMem来进行管理。从另一方面来说，在很多时候用哪一对例程都可以进行动态内存管理。
+   ```
+
    
-   
+
 
