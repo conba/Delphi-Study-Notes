@@ -2,23 +2,23 @@
 
 ## 1.1数据类型概述 
 
-| Simple |                   |                                                  |
-| ------ | ----------------- | ------------------------------------------------ |
-|        | Ordinal(有序类型) |                                                  |
-|        |                   | Integer(integer, Cardinal, Shortint, Smallint……) |
-|        |                   | Character(char, AnsiChar, WideChar)              |
-|        |                   | Boolean(Boolean, ByteBool, WordBool, LongBool)   |
-|        |                   | Enumerated                                       |
-|        |                   | Subrange                                         |
-|        | Real              |                                                  |
-|        |                   | Real                                             |
-|        |                   | Single                                           |
-|        |                   | Double                                           |
-|        |                   | Extended                                         |
-|        |                   |                                                  |
-|        |                   |                                                  |
-|        |                   |                                                  |
-|        |                   |                                                  |
+| Simple |                   |                                                              |
+| ------ | ----------------- | ------------------------------------------------------------ |
+|        | Ordinal(有序类型) |                                                              |
+|        |                   | Integer(integer, Cardinal（无符号32位）, Shortint, Smallint……) |
+|        |                   | Character(char, AnsiChar, WideChar)                          |
+|        |                   | Boolean(Boolean, ByteBool, WordBool, LongBool)               |
+|        |                   | Enumerated                                                   |
+|        |                   | Subrange                                                     |
+|        | Real              |                                                              |
+|        |                   | Real                                                         |
+|        |                   | Single                                                       |
+|        |                   | Double                                                       |
+|        |                   | Extended                                                     |
+|        |                   |                                                              |
+|        |                   |                                                              |
+|        |                   |                                                              |
+|        |                   |                                                              |
 
 ![](数据类型.png)
 

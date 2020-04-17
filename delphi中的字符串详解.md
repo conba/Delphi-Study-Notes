@@ -227,6 +227,18 @@ end;
    // 2. 
    ```
 
+4. 动态分配内存的函数都是在堆中申请的，使用完成后必须要释放。
+
+   ```pascal
+   var
+     P: PChar;
+   begin
+     GetMem(P, Size);  // 使用GetMem申请的内存必须用FreeMen释放。
+     FreeMem(P);
+     P := nil;
+   end;
+   ```
+
    
 
 
