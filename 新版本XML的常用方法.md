@@ -183,5 +183,6 @@ FDataContext.DataToken   // 比较常用的获得DataToken的方法。
 SimpleRoundToEx(StrtoDouble(sValue), cst_Dzpb_AH_WuHu_2018_Decimal_Two) // 保留两位小数
 FDzpbContext.SysOption.Path.SysTempPath  // 临时路径
 ExtractFileName(FileName);               // 取文件名
+ExtractFilePath(FileName);               // 取文件路径
 ExtractFileExt(FileName);                // 取文件后缀名
 ```

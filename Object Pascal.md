@@ -549,7 +549,7 @@ end;
    ## 查看是否存在内存泄漏
    
    ```pascal
-   
+   ReportMemoryLeaksOnShutdown := True;
    ```
    
    ## Delphi中 New,Getmem,ReallocMem联系与区别
